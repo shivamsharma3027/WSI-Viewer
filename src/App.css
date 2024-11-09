@@ -1,0 +1,23 @@
+.app {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  gap: 10px;
+  height: 100vh;
+}
+
+.left-panel,
+.center-panel,
+.hub-view {
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.report-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

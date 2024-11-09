@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f0f4f8;
+  color: #333;
+}
+
+h2, h3 {
+  color: #444;
+  font-weight: 600;
+}
+
+/* Layout Styling */
+.app {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.left-panel,
+.center-panel,
+.hub-view {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Left Panel Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Center Panel Image Viewer */
+.center-panel img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.center-panel button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.center-panel button:hover {
+  background-color: #0056b3;
+}
+
+/* Hub View Styling */
+.hub-view {
+  text-align: center;
+}
+
+.hub-view img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.hub-view .pointer {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ff0000;
+  background: rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Report Button */
+.report-button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.report-button:hover {
+  background-color: #218838;
+}
